@@ -9,7 +9,8 @@ import (
 
 func main() {
 	csvFilename := flag.String("csv", "questions.csv", "A CSV source file for the questions (problem,answer)")
-
+	// timerLimit := flag.String("csv", "questions.csv", "A CSV source file for the questions (problem,answer)")
+	flag.Parse()
 	file, err := os.Open(*csvFilename)
 	if err != nil {
 		exit(fmt.Sprintf("Could not find CSV %s. Please make sure it exists\n", *csvFilename))
