@@ -2,6 +2,8 @@
 
 ![exercise status: coding](https://img.shields.io/badge/exercise%20status-coding-cornflowerblue.svg?style=for-the-badge)
 
+![bonus status: TBD](https://img.shields.io/badge/bonus%20status-coding-dimgray.svg?style=for-the-badge)
+
 ## Exercise details
 
 The goal of this exercise is to create an [http.Handler](https://golang.org/pkg/net/http/#Handler) that will look at the path of any incoming web request and determine if it should redirect the user to a new page, much like URL shortener would.

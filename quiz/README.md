@@ -2,6 +2,8 @@
 
 ![exercise status: done](https://img.shields.io/badge/exercise%20status-done-palegreen.svg?style=for-the-badge)
 
+![bonus status: coding](https://img.shields.io/badge/bonus%20status-coding-cornflowerblue.svg?style=for-the-badge)
+
 ## Exercise details
 
 This exercise is broken into two parts to help simplify the process of explaining it as well as to make it easier to solve. The second part is harder than the first, so if you get stuck feel free to move on to another problem then come back to part 2 later.
