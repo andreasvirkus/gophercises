@@ -36,10 +36,11 @@ But in order for this to work you will need to create functions like `parseYAML`
 
 As a bonus exercises you can also...
 
-1. Update the [main/main.go](https://github.com/gophercises/urlshort/blob/master/main/main.go) source file to accept a YAML file as a flag and then load the YAML from a file rather than from a string.
-2. Build a JSONHandler that serves the same purpose, but reads from JSON data.
-3. Build a Handler that doesn't read from a map but instead reads from a database. Use it as an exercise to familiarize yourself with SQLite?
-4. Web app
-  4.1 Build an API endpoint that can save entries to SQLite and return a URL (hash)
-  4.2 Build a UI where a user can enter a URL and generate a shortened URL for it
+- [ ] Build a JSONHandler that serves the same purpose, but reads from JSON data.
+- [ ] Update the [main.go](main.go) source file to accept a YAML file as a flag and then load the YAML from a file rather than from a string.
+- [ ] Build a Handler that doesn't read from a map but instead reads from a database. Use it as an exercise to familiarize yourself with SQLite?
+- [ ] Web app
+  - [ ] Build an API endpoint that can save entries to SQLite and return a URL (hash)
+  - [ ] Build a UI where a user can enter a URL and generate a shortened URL for it
+
 ****

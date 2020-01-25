@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/csv"
+	"strings"
 	"flag"
 	"fmt"
 	"os"
@@ -21,16 +22,15 @@ func main() {
 		exit("Could not parse the CSV")
 	}
 	fmt.Println("Reading questions from", *csvFilename)
-	fmt.Println(lines)
+	// TODO: Add flag to randomize/shuffle questions
 	questions := parseLines(lines)
-	fmt.Println(questions)
 
 	correctAnswersCount := 0
 	for i, q := range questions {
 		fmt.Printf("Question #%d: %s?\n", i+1, q.problem)
 		var answer string
 		fmt.Scanf("%s\n", &answer)
-		if answer == q.answer {
+		if strings.ToLower(strings.TrimSpace(answer)) == strings.ToLower(strings.TrimSpace(q.answer)) {
 			fmt.Println("Correct!")
 			correctAnswersCount++
 		}
