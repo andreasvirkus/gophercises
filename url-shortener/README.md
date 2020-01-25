@@ -2,7 +2,7 @@
 
 ![exercise status: coding](https://img.shields.io/badge/exercise%20status-coding-cornflowerblue.svg?style=for-the-badge)
 
-![bonus status: TBD](https://img.shields.io/badge/bonus%20status-coding-dimgray.svg?style=for-the-badge)
+![bonus status: TBD](https://img.shields.io/badge/bonus%20status-TBD-dimgray.svg?style=for-the-badge)
 
 ## Exercise details
 
