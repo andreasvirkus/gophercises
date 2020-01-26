@@ -2,7 +2,7 @@
 
 ![exercise status: done](https://img.shields.io/badge/exercise%20status-done-palegreen.svg?style=for-the-badge)
 
-![bonus status: coding](https://img.shields.io/badge/bonus%20status-coding-cornflowerblue.svg?style=for-the-badge)
+![bonus status: done](https://img.shields.io/badge/bonus%20status-done-palegreen.svg?style=for-the-badge)
 
 ## Exercise details
 
@@ -55,4 +55,4 @@ At the end of the quiz the program should still output the total number of quest
 As a bonus exercises you can also...
 
 - [x] Add string trimming and cleanup to help ensure that correct answers with extra whitespace, capitalization, etc are not considered incorrect. *Hint: Check out the [strings](https://golang.org/pkg/strings/) package.*
-- [ ] Add an option (a new flag) to shuffle the quiz order each time it is run.
+- [x] Add an option (a new flag) to shuffle the quiz order each time it is run.

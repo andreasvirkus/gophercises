@@ -2,7 +2,9 @@ package main
 
 import (
 	"encoding/csv"
+	"math/rand"
 	"strings"
+	"time"
 	"flag"
 	"fmt"
 	"os"
@@ -10,7 +12,7 @@ import (
 
 func main() {
 	csvFilename := flag.String("csv", "questions.csv", "A CSV source file for the questions (problem,answer)")
-	// timerLimit := flag.String("csv", "questions.csv", "A CSV source file for the questions (problem,answer)")
+	shuffleQuestions := flag.Bool("shuffle", false, "Ask the questions in a random order")
 	flag.Parse()
 	file, err := os.Open(*csvFilename)
 	if err != nil {
@@ -22,8 +24,14 @@ func main() {
 		exit("Could not parse the CSV")
 	}
 	fmt.Println("Reading questions from", *csvFilename)
-	// TODO: Add flag to randomize/shuffle questions
 	questions := parseLines(lines)
+
+	if *shuffleQuestions {
+		rand.Seed(time.Now().UnixNano())
+		rand.Shuffle(len(questions), func(i, j int) {
+			questions[i], questions[j] = questions[j], questions[i]
+		})
+	}
 
 	correctAnswersCount := 0
 	for i, q := range questions {
